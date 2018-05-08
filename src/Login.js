@@ -5,6 +5,7 @@ import Sticky from 'react-stickynode';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Link } from 'react-router-dom'
 
 class Login extends Component {
   render() {
@@ -21,8 +22,8 @@ class Login extends Component {
       hintText="Enter your password"
       floatingLabelText="Password"
       />
-      <RaisedButton backgroundColor={"brown"} disableBackgroundColor={true}>
-        <div style={{color: "white"}}>Login</div>
+      <RaisedButton backgroundColor={"brown"} disableBackgroundColor={true} style={{marginTop: 10}}>
+        <div style={{color: "white"}}><Link to='/Main' style={{color: "white"}}>login</Link></div>
       </RaisedButton>
       </div>
       </div>

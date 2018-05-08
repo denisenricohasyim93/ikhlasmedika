@@ -6,9 +6,13 @@
     "axios": "^0.18.0",
     "material-ui": "^0.20.0",
     "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dock": "^0.2.4",
     "react-dom": "^16.3.2",
+    "react-modal": "^3.4.4",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
+    "react-sliding-pane": "^2.0.2",
     "react-stickynode": "^1.4.1",
     "react-tap-event-plugin": "^3.0.2"
   },

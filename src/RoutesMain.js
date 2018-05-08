@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import App from './App';
-import Login from './Login';
-import Main from './Main';
+import Menu1 from './Menu1';
+import Menu2 from './Menu2';
+import Menu3 from './Menu3';
 
 
 // The Main component renders one of the three provided
@@ -10,12 +10,12 @@ import Main from './Main';
 // and /schedule routes will match any pathname that starts
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
-const Routes = () => (
+const RoutesMain = () => (
     <Switch>
-      <Route exact path='/' component={App}/>
-      <Route exact path='/Login' component={Login}/>
-      <Route exact path='/Main' component={Main}/>
+      <Route exact path='/Main' component={Menu1}/>
+      <Route exact path='/Main/Menu2' component={Menu2}/>
+      <Route exact path='/Main/Menu3' component={Menu3}/>
     </Switch>
 )
 
-export default Routes
+export default RoutesMain
