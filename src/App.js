@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom'
 
 import Sticky from 'react-stickynode';
 
@@ -9,9 +9,8 @@ class App extends Component {
     return (
     <div>
       <Sticky top='#header' bottomBoundary='#content'>
-          <div style={{backgroundColor: 'black', color: 'white', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', height: 50, padding: 15}}>
-            #Login
-            <div style={{marginLeft: 15}}>#Register</div>
+          <div style={{backgroundColor: 'darkblue', color: 'white', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', height: 50, padding: 15}}>
+            <Link to='/Login' style={{color: "white"}}>#LOGIN</Link>
           </div>
       </Sticky>
       <div className="App" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: 700, backgroundColor: 'purple'}}>
